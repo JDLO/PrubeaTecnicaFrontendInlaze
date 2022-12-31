@@ -1,1 +1,7 @@
-<p>card-message-component works!</p>
+<mat-card>
+    <mat-card-title>{{message.tittle}}</mat-card-title>
+    <mat-card-content>{{message.description}}</mat-card-content>
+    <mat-card-footer>
+        <p><span>{{message.date_make}}</span><span>{{message.person.name}}</span></p>
+    </mat-card-footer>
+</mat-card>
