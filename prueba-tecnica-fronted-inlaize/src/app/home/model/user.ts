@@ -5,7 +5,7 @@ export class User {
     public password: string;
     public nick_name: string;
 
-    public constructor(entity){
+    public constructor(entity: any){
         this.id = entity.id;
         this.name = entity.name,
         this.email = entity.email
