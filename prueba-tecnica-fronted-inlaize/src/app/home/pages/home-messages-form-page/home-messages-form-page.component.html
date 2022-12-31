@@ -1,1 +1,18 @@
 <p>home-messages-form-page works!</p>
+<div>
+    <form>
+        <mat-card>
+            <mat-form-field>
+                <label>What search?</label>
+                <input type="text" matInput required/>
+            </mat-form-field>
+            <mat-form-field>
+                <label>Date select</label>
+                <input type="date" required/>
+            </mat-form-field>
+        </mat-card>
+    </form>
+    <div>
+        <app-card-message-list-component [messages]="messages"></app-card-message-list-component>
+    </div>
+</div>
