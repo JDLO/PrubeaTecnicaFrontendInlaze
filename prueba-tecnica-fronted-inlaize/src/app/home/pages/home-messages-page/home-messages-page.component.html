@@ -1,1 +1,23 @@
-<p>home-messages-page works!</p>
+<div>
+    <form>
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>All Messages</mat-card-title>
+            </mat-card-header>
+            <mat-form-field>
+                <label>Title Messages</label>
+                <input type="text" matInput placeholder="Talk about me"
+                    required/>
+            </mat-form-field>
+            <mat-form-field>
+                <label>Messages</label>
+                <input type="text" placeholder="Create message for share white friends. Max 700 chars"
+                    required/>
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </mat-card>
+    </form>
+    <div>
+        <app-card-message-list-component [messages]="messages"></app-card-message-list-component>
+    </div>
+</div>
