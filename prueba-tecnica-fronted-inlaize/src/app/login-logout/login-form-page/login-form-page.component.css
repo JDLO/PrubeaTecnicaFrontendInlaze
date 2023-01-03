@@ -1,0 +1,21 @@
+.login-form {
+    padding: 3rem 1rem;
+    margin: auto;
+}
+mat-card {
+    width: 50%;
+    margin: auto;
+}
+mat-card-title {
+    margin: auto;
+}
+img {
+    margin: auto;
+}
+
+.full-wdth-input, button {
+    width: 100%;
+}
+.separator {
+    margin-bottom: 1rem;
+}

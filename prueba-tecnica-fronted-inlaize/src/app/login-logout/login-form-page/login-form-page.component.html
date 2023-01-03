@@ -1,19 +1,30 @@
-<div>
+<div class="login-form">
     <mat-card>
-        <mat-card-content>
-            <mat-card-header>
-                <img mat-card-lg-image src="assets/image/image_2.png">
-            </mat-card-header>
-            <mat-card-title>Welcome To Wires</mat-card-title>
-            <mat-form-field>
-                <input type="text" matInput placeholder="Username"
-                    required/>
-            </mat-form-field>
-            <mat-form-field>
-                <input type="password" placeholder="Password"
-                    required/>
-            </mat-form-field>
-            <button type="submit" mat-raised color="primary">Login</button>
-        </mat-card-content>
+        <mat-card-header class="separator">
+            <img mat-card-lg-image src="assets/image/image_2.png">
+            <br/>
+        </mat-card-header>
+        <mat-card-title>Welcome To Wires</mat-card-title>
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+            <mat-card-content>
+                <mat-form-field class="full-wdth-input separator">
+                    <input 
+                        matInput="" 
+                        type="text" 
+                        formControlName="email"
+                        placeholder="Email"
+                        />
+                </mat-form-field>
+                <mat-form-field class="full-wdth-input separator">
+                    <input 
+                        matInput="" 
+                        type="password" 
+                        formControlName="password"
+                        placeholder="Password"
+                        />
+                </mat-form-field>
+                <button type="submit" mat-raised-button color="primary">Login</button>
+            </mat-card-content>
+        </form>
     </mat-card>
 </div>
